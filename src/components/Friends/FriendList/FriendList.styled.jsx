@@ -10,5 +10,5 @@ export const FriendsList = styled.ul`
   margin: 0 auto;
   padding: 0;
   list-style: none;
-  margin-bottom: 32px;
+  margin-bottom: ${props => props.theme.space[5]}px;
 `;

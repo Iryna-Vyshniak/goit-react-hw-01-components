@@ -6,7 +6,7 @@ export const Section = styled.section`
   flex-direction: column;
 
   margin: 0 auto;
-  margin-bottom: 32px;
+  margin-bottom: ${props => props.theme.space[5]}px;
   max-width: 100%;
   width: 360px;
 
@@ -19,7 +19,7 @@ export const Title = styled.h2`
   padding: ${props => props.theme.space[4]}px;
 
   border-bottom: 1px solid #d3d5e3;
-  background-color: #fff;
+  background-color: ${props => props.theme.colors.white};
 
   color: ${props => props.theme.colors.accent};
   text-shadow: 1px 1px 1px #fff;

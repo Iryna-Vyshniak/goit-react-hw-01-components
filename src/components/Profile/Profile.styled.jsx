@@ -8,15 +8,15 @@ export const ProfileCard = styled.div`
   gap: 10px;
   
   margin: 0 auto;
-  margin-bottom: 32px;
-  padding: 8px;
+  margin-bottom: ${props => props.theme.space[5]}px;
+  padding: ${props => props.theme.space[3]}px;
 
   max-width: 100%;
   width: 360px;
   
-  border-radius: 8px;
+  border-radius: ${props => props.theme.radii.medium};
   box-shadow: -1px -1px 1px #fff, 1px 1px 1px #babecc;
-  background-color: #e9edff;
+  background-color: ${props => props.theme.colors.background};
 `;
 
 export const Description = styled.div`
@@ -25,7 +25,7 @@ export const Description = styled.div`
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 30px;
+  margin-bottom: ${props => props.theme.space[5]}px;
 `;
 
 export const Avatar = styled.img`
@@ -49,10 +49,9 @@ export const Avatar = styled.img`
 export const Info = styled.p`
   margin: 10px 0 5px 0;
   color: ${props => props.theme.colors.accent};
-  text-shadow: 1px 1px 1px #fff;
+  text-shadow: 1px 1px 1px ${props => props.theme.colors.white};
   font-family: ${props => props.theme.fonts.heading};
-  font-size: 16px;
-  font-weight: 400;
+  font-size: ${props => props.theme.fontSizes.m};
 `;
 
 export const Name = styled(Info)`
@@ -61,11 +60,11 @@ export const Name = styled(Info)`
 `;
 
 export const Tag = styled(Info)`
-  color: #2b3162;
+  color: ${props => props.theme.colors.primary};
 `;
 
 export const Location = styled(Info)`
-  color: #1a236a;
+  color: ${props => props.theme.colors.secondary};
 `;
 
 export const StatsList = styled.ul`
@@ -73,7 +72,7 @@ export const StatsList = styled.ul`
   gap: 10px;
   justify-content: center;
   align-items: center;
-  padding: 8px;
+  padding: ${props => props.theme.space[4]}px;
   width: 100%;
 `;
 
@@ -90,16 +89,15 @@ width: 100%;
   }
 
   :not(:last-child){
-  border-right: 1px dotted #2b3162;
+  border-right: 1px dotted ${props => props.theme.colors.primary};
 
   }
 `;
 
 export const StatsInfo = styled.span`
   margin: 0px 5px;
-  color: #31344b;
+  color: ${props => props.theme.colors.primary};
   font-size: 16px;
-  font-weight: 400;
 `;
 
 export const Label = styled(StatsInfo)`
@@ -107,7 +105,7 @@ export const Label = styled(StatsInfo)`
 `;
 
 export const Quantity = styled(StatsInfo)`
-  color: #1a236a;
+  color: ${props => props.theme.colors.secondary};
   text-shadow: 1px 1px 1px #fff;
-  font-weight: 700;
+  font-weight: ${props => props.theme.fontWeights.bold};
 `;

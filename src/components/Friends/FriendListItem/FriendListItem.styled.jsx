@@ -6,14 +6,14 @@ export const FriendItem = styled.li`
   justify-content: flex-start;
   gap: 32px;
   margin: 0 auto;
-  padding: 8px;
+  padding: ${props => props.theme.space[3]}px;
 
   max-width: 100%;
   width: 360px;
 
   border-radius: 8px;
   box-shadow: -1px -1px 1px #fff, 1px 1px 1px #babecc;
-  background-color: #e9edff;
+  background-color: ${props => props.theme.colors.background};
 `;
 
 export const Status = styled.span`
