@@ -7,7 +7,7 @@ export const theme = {
     primary: '#2b3162',
     secondary: '#1a236a;',
     accent: '#9e0202',
-    muted: '#f6f6f6',
+    muted: '#dddff8',
   },
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
   fonts: {

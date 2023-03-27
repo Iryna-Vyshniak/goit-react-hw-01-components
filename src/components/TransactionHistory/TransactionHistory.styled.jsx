@@ -34,7 +34,7 @@ export const Tr = styled.tr`
 
 export const ExtendedTr = styled(Tr)`
   background-color: ${props =>
-    props.idx % 2 === 0 ? '#e9edff;' : 'transparent'};
+    props.idx % 2 === 0 ? props.theme.colors.muted : 'transparent'};
 `;
 
 // :nth-child(even) {
