@@ -15,17 +15,14 @@ export const Section = styled.section`
 `;
 
 export const Title = styled.h2`
-  margin: 0;
   padding: ${props => props.theme.space[4]}px;
 
   border-bottom: 1px solid #d3d5e3;
-  background-color: ${props => props.theme.colors.white};
-
   color: ${props => props.theme.colors.accent};
   text-shadow: 1px 1px 1px #fff;
   font-family: ${props => props.theme.fonts.heading};
   font-weight: ${props => props.theme.fontWeights.bold};
-  font-size: ${props => props.theme.fontSizes.l};
+  font-size:  font-size: ${props => props.theme.fontSizes.l};
 
   text-transform: uppercase;
   text-align: center;
