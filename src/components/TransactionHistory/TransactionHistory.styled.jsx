@@ -16,8 +16,9 @@ export const Table = styled.table`
 export const Thead = styled.thead`
   border-radius: 0.5rem;
   background-color: #e9edff;
-  color: #9e0202;
+  color: ${props => props.theme.colors.accent};
   text-shadow: 0.0625rem 0.0625rem 0.0625rem #fff;
+  font-family: ${props => props.theme.fonts.heading};
   font-size: 1rem;
   font-weight: 400;
   text-transform: uppercase;

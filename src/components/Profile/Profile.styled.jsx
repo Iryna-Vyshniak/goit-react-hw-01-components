@@ -48,8 +48,9 @@ export const Avatar = styled.img`
 
 export const Info = styled.p`
   margin: 10px 0 5px 0;
-  color: #9e0202;
+  color: ${props => props.theme.colors.accent};
   text-shadow: 1px 1px 1px #fff;
+  font-family: ${props => props.theme.fonts.heading};
   font-size: 16px;
   font-weight: 400;
 `;

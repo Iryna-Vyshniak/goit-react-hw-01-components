@@ -21,10 +21,11 @@ export const Title = styled.h2`
   border-bottom: 1px solid #d3d5e3;
   background-color: #fff;
 
-  color: #9e0202;
+  color: ${props => props.theme.colors.accent};
   text-shadow: 1px 1px 1px #fff;
-  font-weight: 700;
-  font-size: 32px;
+  font-family: ${props => props.theme.fonts.heading};
+  font-weight: ${props => props.theme.fontWeights.bold};
+  font-size: ${props => props.theme.fontSizes.l};
 
   text-transform: uppercase;
   text-align: center;
