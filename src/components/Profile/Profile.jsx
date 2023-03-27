@@ -6,7 +6,7 @@ export const Profile = ({ username, avatar, tag, location, stats }) => {
   return (
     <ProfileCard>
       <Description>
-        <Avatar src={avatar} alt="User avatar" className="avatar" />
+        <Avatar src={avatar} alt="User avatar"/>
         <Name>{username}</Name>
         <Tag>@{tag}</Tag>
         <Location>{location}</Location>
@@ -26,9 +26,10 @@ export const Profile = ({ username, avatar, tag, location, stats }) => {
           <Quantity>{stats.likes}</Quantity>
         </StatsItem>
       </StatsList>
+
     </ProfileCard>
-  );
-};
+  )
+}
 
 Profile.propTypes = {
     username: PropTypes.string.isRequired,

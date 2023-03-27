@@ -1,6 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Table, Thead, Tr, Th, Tb, Td, Type } from './TransactionHistory.styled'; 
+import {
+  Table,
+  Thead,
+  Tr,
+  Th,
+  Tb,
+  Td,
+  Type,
+  ExtendedTr,
+} from './TransactionHistory.styled';
 
 export const TransactionHistory = ({ items }) => {
   return (
@@ -14,15 +23,16 @@ export const TransactionHistory = ({ items }) => {
       </Thead>
 
       <Tb>
-        {items.map(item => {
+        {items.map((item, idx) => {
           return (
-            <Tr key={item.id} id={item.id}>
-              <TableData
-                type={item.type}
-                currency={item.currency}
-                amount={item.amount}
-              />
-            </Tr>
+            <TableRow
+              key={item.id}
+              id={item.id}
+              type={item.type}
+              currency={item.currency}
+              amount={item.amount}
+              index={idx}
+            />
           );
         })}
       </Tb>
@@ -30,13 +40,13 @@ export const TransactionHistory = ({ items }) => {
   );
 };
 
-const TableData = ({ type, amount, currency }) => {
+const TableRow = ({ type, amount, currency, index }) => {
   return (
-    <>
+    <ExtendedTr idx={index}>
       <Type>{type}</Type>
       <Td>{amount}</Td>
       <Td>{currency}</Td>
-    </>
+    </ExtendedTr>
   );
 };
 
@@ -49,4 +59,11 @@ TransactionHistory.propTypes = {
       currency: PropTypes.string.isRequired,
     }).isRequired
   ).isRequired,
+};
+
+TableRow.propTypes = {
+  index: PropTypes.number.isRequired,
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
 };
