@@ -16,7 +16,7 @@ export const Section = styled.section`
 
 export const Title = styled.h2`
   margin: 0;
-  padding: 32px;
+  padding: ${props => props.theme.space[4]}px;
 
   border-bottom: 1px solid #d3d5e3;
   background-color: #fff;
@@ -48,7 +48,7 @@ export const StatListItem = styled.li`
   align-items: center;
   justify-content: center;
   flex: 1 1 auto;
-  padding: 8px;
+  padding: ${props => props.theme.space[3]}px;
 
   width: 100%;
   height: 100%;
@@ -74,6 +74,6 @@ export const Label = styled.span`
 
 export const Percentage = styled.span`
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: ${props => props.theme.fontWeights.bold};
   color: #fff;
 `;
