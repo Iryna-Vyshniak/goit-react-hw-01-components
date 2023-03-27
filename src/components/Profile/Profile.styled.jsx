@@ -9,7 +9,7 @@ export const ProfileCard = styled.div`
   
   margin: 0 auto;
   margin-bottom: ${props => props.theme.space[5]}px;
-  padding: ${props => props.theme.space[3]}px;
+  padding: ${props => props.theme.space[4]}px;
 
   max-width: 100%;
   width: 360px;
@@ -25,7 +25,7 @@ export const Description = styled.div`
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-bottom: ${props => props.theme.space[5]}px;
+  margin-bottom: ${props => props.theme.space[4]}px;
 `;
 
 export const Avatar = styled.img`
@@ -33,10 +33,9 @@ export const Avatar = styled.img`
   align-items: center;
   justify-content: center;
 
-  margin-top: 20px;
-
   height: 150px;
   width: 150px;
+
   border-radius: 50%;
   box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
 
@@ -47,7 +46,6 @@ export const Avatar = styled.img`
 `;
 
 export const Info = styled.p`
-  margin: 10px 0 5px 0;
   color: ${props => props.theme.colors.accent};
   text-shadow: 1px 1px 1px ${props => props.theme.colors.white};
   font-family: ${props => props.theme.fonts.heading};
@@ -55,7 +53,8 @@ export const Info = styled.p`
 `;
 
 export const Name = styled(Info)`
-  font-size: 23px;
+  color: ${props => props.theme.colors.accent};
+  font-size: ${props => props.theme.fontSizes.l};
   font-weight: 500;
 `;
 

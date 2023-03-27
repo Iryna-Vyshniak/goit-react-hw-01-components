@@ -4,8 +4,7 @@ export const Table = styled.table`
   margin: 0 auto;
   margin-bottom: ${props => props.theme.space[5]}px;
   padding: ${props => props.theme.space[4]}px;
-  margin: 1em 0;
-
+ 
   max-width: 90%;
   width: 90%;
   border-radius: ${props => props.theme.radii.medium};

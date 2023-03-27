@@ -11,6 +11,8 @@ import transactions from './TransactionHistory/transactions.json';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 
 
+import { GlobalStyle } from '../GlobalStyle';
+
 
 export const App = () => {
   return (
@@ -25,6 +27,7 @@ export const App = () => {
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />;
       <TransactionHistory items={transactions} />;
+       <GlobalStyle />
     </>
   );
 };

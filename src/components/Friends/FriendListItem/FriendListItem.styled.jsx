@@ -4,7 +4,7 @@ export const FriendItem = styled.li`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 32px;
+  gap: 42px;
   margin: 0 auto;
   padding: ${props => props.theme.space[3]}px;
 
@@ -29,7 +29,6 @@ export const Status = styled.span`
 
 export const Image = styled.img`
   display: block;
-  margin-left: 2.625rem;
   width: 40px;
   height: 40px;
   border-radius: 8px;
